@@ -1,12 +1,12 @@
 body {
     margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 li {
     list-style: none;
     margin: 5%;
     color: white;
-    font-family: Arial, Helvetica, sans-serif;
 }
 
 .main-wrapper {
@@ -48,8 +48,50 @@ li {
     grid-row: 2 / 3;
     grid-column: 2 / 3;
     background-color: grey;
+    display: grid;
+    grid-template: .2fr 2fr .2fr/ 2fr 1fr;
 }
 
 .user-welcome button{
     grid-row: span 2;
 }
+
+ h1, h2, h3 {
+    color: black;
+    margin: .5em 0em 0em .5em;
+    font-size: 1.2em;
+}
+
+.project-gallery {
+    display: grid;
+    grid-template: 1fr 1fr 1fr/ 1.5fr 1.5fr;
+    gap: 1.5em;
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+    margin: 0em 1em 0em 1em;
+}
+
+.project-card {
+    background-color: white;
+    border-left: 8px solid gold;
+    border-radius: 2%;
+}
+
+h2 {
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+}
+
+.news-wrapper {
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+    display: grid;
+    grid-template: 1fr .2fr 1fr / 1fr;
+    margin: 0em 1.5em 0em 1em;
+}
+
+.announcements, .trending {
+    background-color: white;
+    border-radius: 2%;
+}
+
