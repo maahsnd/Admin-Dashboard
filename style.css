@@ -9,10 +9,17 @@ li {
 }
 
 .main-wrapper {
-    width: 98vw;
-    height: 98vh;
+    max-width: 98vw;
+    max-height: 98vh;
     display: grid;
     grid-template: 1fr 8fr / 1fr 4fr;
+}
+
+button:hover, img:hover, li:hover,
+ .user-buttons>button:hover, .user-welcome img:hover{
+    cursor: pointer;
+    color: gold;
+    background-color: palevioletred;
 }
 
 .sidebar {
